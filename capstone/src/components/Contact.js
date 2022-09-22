@@ -1,17 +1,12 @@
 import React from 'react'
 import { Outlet, Link } from "react-router-dom";
+import Form from './Form';
+import ConHeader from './ConHeader';
 
 const Contact = () => {
 return (
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-        <h1 class="display-4">Contact</h1>
-        <nav>
-    <Link to="/">Home</Link> |{" "}
-    <Link to="/Contact">Contact</Link>
-    </nav>
-    </div>
-    </div>
+    <><ConHeader />
+    <Form /></>
 )
 }
 

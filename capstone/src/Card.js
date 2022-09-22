@@ -2,12 +2,15 @@ import React , { Component } from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Image from 'react-bootstrap/Image'
+
+const style1 = {width: '18rem'};
+const style2 = {margin: '10px'};
+const style3 = {flexGrow: '1'};
 
 function CardExample() {
 return (
-    <Card style={{ width: '18rem' }}>
-    <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+    <Card style={{...style1, ...style2, ...style3}}>
+    <Card.Img variant="top" src="https://picsum.photos/seed/picsum/150/100" />
     <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
