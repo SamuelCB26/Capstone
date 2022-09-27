@@ -7,17 +7,16 @@ const style1 = {width: '18rem'};
 const style2 = {margin: '10px'};
 const style3 = {flexGrow: '1'};
 
-function CardExample() {
+function CardExample(props) {
 return (
-    <Card style={{...style1, ...style2, ...style3}}>
-    <Card.Img variant="top" src="https://picsum.photos/seed/picsum/150/100" />
+    <Card className="card" style={{...style1, ...style2, ...style3}}>
+    <Card.Img variant="top" src={props.img} />
     <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>{props.title}</Card.Title>
         <Card.Text>
-        Some quick example text to build on the card title and make up the
-        bulk of the card's content.
+        {props.text}
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button variant="primary">Discover More</Button>
     </Card.Body>
     </Card>
 );

@@ -1,38 +1,119 @@
 .App {
   text-align: center;
+  margin: auto 0;
+  display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.jumbotron {
+  background-image: linear-gradient(to right, #f9ee98, #fa9e5c);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container h1 {
+  font-family: "Lobster", cursive;
+  color:rgb(64, 64, 64);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bootstrap {
+  background-image: linear-gradient(to right, #e9e9e8, #f9faf9);
+}
+
+.card {
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+}
+
+.card:hover {
+  transition: 0.4s;
+  transform: scale(1.01);
+}
+
+#colour-card {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+#colours {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+}
+
+#colour {
+  display: inline-block;
+  flex-wrap: wrap;
+  padding-top: 5px;
+}
+
+#colour:nth-child(1) {
+  padding-left: 5px;
+}
+
+#colour:nth-child(5) {
+  padding-right: 5px;
+}
+
+#col {
+  height: 150px;
+  width: 150px;
+}
+
+#get-colour {
+  font-family: 'Lobster', cursive;
+  color: rgb(236, 236, 235);
+}
+
+#get-colour:hover {
+  transition: 0.4s;
+  transform: scale(1.1);
+}
+
+#text-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgb(246, 186, 112);
+}
+
+#text-card {
+  background-color:rgb(209, 154, 27);
+  border-radius: 15px;
+  border: none;
+  color: rgb(236, 236, 235);
+  font-family:monospace;
+  display: inline-block;
+  width: 500px;
+  margin: 20px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
 }
 
-.App-link {
-  color: #61dafb;
+#text-card:hover {
+  transition: 0.4s;
+  transform: scale(1.01);
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#text-button {
+  font-family: 'Lobster', cursive;
+  color: rgb(236, 236, 235);
+  border-radius: 15px;
+  border: none;
+  color: rgb(65, 64, 64);
+  display: inline-block;
+  width: 80px;
+  font-size: 1.1rem;
+}
+
+#text-button:hover {
+  transition: 0.4s;
+  transform: scale(1.1);
+}
+
+#text-h1 {
+  font-family: 'Lobster', cursive;
+  color: rgb(65, 64, 64);
 }

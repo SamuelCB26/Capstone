@@ -3,10 +3,10 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
 const style1 = {display: 'flex'}
-const style2 = {flexDirection: 'column'}
-const style3 = {justifyContent: 'center'}
+const style2 = {justifyContent: 'center'}
+const style3 = {flexDirection: 'column'}
 const style4 = {display: 'inline-block'}
-const style5 = {alignItems: 'center'}
+const style5 = {margin: 'auto 65px'}
 
 const Forms = () => {
 return (
@@ -31,11 +31,11 @@ return (
         </Form.Text>
     </Form.Group>
     <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-        <Form.Label>Example textarea</Form.Label>
+        <Form.Label>Message</Form.Label>
         <Form.Control as="textarea" rows={3} />
     </Form.Group>
     <Form.Group className="mb-3" controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" label="Check me out" />
+        <Form.Check type="checkbox" label="Tick box if you do not wish to receive marketing*" />
     </Form.Group>
     <Button variant="primary" type="submit">
         Submit
